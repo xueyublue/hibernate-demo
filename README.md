@@ -1,6 +1,5 @@
 # hibernate-demo
-Hibernate Demo
-
+This is a hibernate demo project and it covers below topics:
 - Basic CRUD
 - HQL CRUD
 - Named Query
