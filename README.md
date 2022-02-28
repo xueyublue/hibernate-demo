@@ -7,10 +7,27 @@ This is a hibernate demo project and it covers below topics:
   - Delete record with primary key
 - HQL RUD
   - Query all tale records
-- Named Query
-- Named Native Query
+  - Query selected columns only
+  - Aggregate functions
+  - Query with where conditions
+  - Query with like condition
+  - Update
+  - Delete
+- HQL - Named Query
+- HQL - Named Native Query
 - One to One Mapping
 - One to Many Mapping
 - Many to Many Mapping
 - Criteria Query
-- Caching
+  - Query all table records
+  - Query with primary key
+  - Query with parameter
+  - Aggregate functions
+  - Query single column
+  - Query multiple columns
+  - Returning Data Transfer Object (DTO)
+  - Tuple
+  - Query where conditions
+- Caching 
+  - First level caching
+  - Second level caching
