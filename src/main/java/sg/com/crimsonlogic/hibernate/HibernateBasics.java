@@ -19,11 +19,11 @@ public class HibernateBasics {
 			
     		create(factory.getCurrentSession());
 			
-//			read(factory.getCurrentSession(), 1);
+			read(factory.getCurrentSession(), 1);
 			
 //			update(factory.getCurrentSession());
 			
-			delete(factory.getCurrentSession());
+//			delete(factory.getCurrentSession());
 			
 		} 
 		catch (Exception e) {
@@ -96,6 +96,13 @@ public class HibernateBasics {
 		// HQL - query with LIKE condition
 		students = session.createQuery("from Student s where s.firstName like '%Danny'", Student.class).getResultList();
 		System.out.println("Result size: " + students.size());System.err.println();
+		
+		// HQL - pagination
+		query = session.createQuery("from Student", Student.class);
+		query.setFirstResult(1); 	// skip first X records
+		query.setMaxResults(1);		// get X record
+		query.getResultList();
+		System.out.println("HQL pagination: " + students.size());System.out.println();
 		
 		// Named Query - query single record
 		query = session.getNamedQuery("student.id");
